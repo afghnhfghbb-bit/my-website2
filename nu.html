@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sea Animal - Shark</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0b132b; /* Dark blue ocean tone */
+      color: #e0e0e0;
+      margin: 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .magazine-layout {
+      width: 100%;
+      max-width: 1000px;
+      background-color: #1c2541; /* Deep blue interior */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 40px 50px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 30px;
+      min-height: calc(100vh - 40px);
+    }
+
+    .magazine-header {
+      text-align: center;
+      border-bottom: 2px solid #3a506b;
+      padding-bottom: 20px;
+    }
+
+    .magazine-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      color: #5bc0be; /* Aqua blue title */
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .magazine-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .pet-photo-section {
+      position: relative;
+      background-color: #162447;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .pet-photo {
+      width: 85%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: 3px solid #5bc0be;
+    }
+
+    .text-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #5bc0be;
+      border-bottom: 1px solid #3a506b;
+      padding-bottom: 5px;
+    }
+
+    p {
+      color: #dcdcdc;
+      font-size: 1.05em;
+      text-align: justify;
+    }
+
+    .magazine-footer {
+      text-align: center;
+      border-top: 1px solid #3a506b;
+      padding-top: 20px;
+      color: #a0a0a0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .text-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .magazine-header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="magazine-layout">
+    <header class="magazine-header">
+      <h1>Sea Animal: The Shark</h1>
+    </header>
+
+    <main class="magazine-content">
+      <section class="pet-photo-section">
+        <img src="https://pic.i7lm.com/wp-content/uploads/2023/09/%D8%B5%D9%88%D8%B1-%D8%B1%D8%A7%D8%A6%D8%B9%D8%A9-%D8%B9%D9%86-%D8%B3%D9%85%D9%83-%D8%A7%D9%84%D9%82%D8%B1%D8%B4.png" alt="Shark" class="pet-photo">
+      </section>
+
+      <section class="text-columns">
+        <div class="column">
+          <h2>About the Shark</h2>
+          <p>
+            Sharks are one of the most fascinating and powerful creatures in the ocean. 
+            They have been around for over 400 million years, even before dinosaurs roamed the Earth. 
+            Sharks play a vital role in maintaining the balance of marine ecosystems by controlling the population of other fish species. 
+            Despite their fierce appearance, most sharks are not dangerous to humans and prefer to avoid contact.
+          </p>
+        </div>
+
+        <div class="column">
+          <h2>Life in the Deep</h2>
+          <p>
+            The shark’s body is perfectly designed for speed and stealth. 
+            Its sleek shape helps it glide smoothly through water, while its sharp senses detect even the faintest movements. 
+            Living in the depths, sharks are symbols of strength, adaptability, and mystery. 
+            Each movement they make reminds us of the delicate balance of life beneath the waves.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="magazine-footer">
+      &copy; 2025 Sea Life Magazine | Designed with 💙 for ocean lovers
+    </footer>
+  </div>
+</body>
+</html>
